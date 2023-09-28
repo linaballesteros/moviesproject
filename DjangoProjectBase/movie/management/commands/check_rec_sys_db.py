@@ -14,8 +14,8 @@ class Command(BaseCommand):
     def handle(self, *args, **kwargs):
 
         #Se lee del archivo .env la api key de openai
-        _ = load_dotenv()
-        openai.api_key  = os.environ.get('openAI_api_key')
+        _ = load_dotenv('../openAI.env')
+        openai.api_key  = os.environ['openAI_api_key']
         
         items = Movie.objects.all()
 
