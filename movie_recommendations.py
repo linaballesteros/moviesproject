@@ -58,4 +58,3 @@ sim = np.array(sim)
 idx = np.argmax(sim)
 print(movies[idx]['title'])
 
-
